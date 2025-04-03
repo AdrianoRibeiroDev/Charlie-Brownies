@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="shortcut icon" href="src/imagens/logo-300-300.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Charlie Brownie Jr</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#">
+                <img id="nav_logo" src="src/imagens/cbj-vermelho-transparente.png" alt="Logo">
+                <img id="nav_logo_scrolled" src="src/imagens/cbj-branco-transparente.png" alt="Logo ao rolar">
+            </a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+    
+            <button class="btn-default" onclick="window.open('https://www.angloalante.com.br', '_blank');">
+                Colégio
+            </button>
+    
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Ínicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+    
+            <button class="btn-default">
+                Colégio
+                <a href="https://www.angloalante.com.br"></a>
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">A vida é curta, então aproveite o <span>brownie</span></h1>                
+                <p class="description">Somos um projeto de empreendedorismo do colégio Anglo Alante, estudamos no 2°E e os nossos produtos são brownies com coberturas baseados na temática da banda Charlie Brown Jr.</p>
+                <div id="cta_buttons">
+                    <a href="#menu" class="btn-default">
+                        Ver sabores
+                    </a>
+
+                    <a href="tel:+5512992462292" id="phone_button">
+                        <button class="btn-default">
+                                <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (12)99246-2292
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5512992303948">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/soucharliebrownies">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            </div>
+
+            <div id="banner">
+                <picture>
+                    <source srcset="src/imagens/banner-brownie-guitarra-p.png" media="(max-width: 768px)">
+                    <source srcset="src/imagens/banner-brownie-guitarra-m.png" media="(max-width: 1446px)">
+                    <img src="src/imagens/banner-brownie-guitarra-g.png" alt="Brownie com guitarra">
+                </picture>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/brownie-tradicional.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Brownie Tradicional
+                    </h3>
+
+                    <span class="dish-description">
+                        Brownie Tradicional no Copinho
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$8,00</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/cafe-expresso.png" alt="">
+
+                    <h3 class="dish-title">
+                        Café Expresso
+                    </h3>
+
+                    <span class="dish-description">
+                        Café Expresso Temático
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$5,00</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/brownie-morango.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Lugar ao Sol
+                    </h3>
+
+                    <span class="dish-description">
+                        Brownie com Brigadeiro de Morango
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$11,00</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/brownie-brigadeiro.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Aquela Pazta
+                    </h3>
+
+                    <span class="dish-description">
+                        Brownie com Brigadeiro de Chocolate
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$11,00</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/brownie-azul.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Céu Azul
+                    </h3>
+
+                    <span class="dish-description">
+                        Brownie com Cobertura de Creamcheese com Chocolate Branco e Corante Azul 
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$11,00</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/brownie-snoopy.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Snoopy Brownie
+                    </h3>
+
+                    <span class="dish-description">
+                        Brownie com Cobertura de Brigadeiro de Chocolate com mm's
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$12,50</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/combo-1.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Brownie Recheado +<br> <span>Café Expresso</span>
+                    </h3>
+
+                    <span class="dish-description">
+                        Combo de Brownie Recheado e Café Expresso
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$15,00</h4>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/imagens/combo-2.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Brownie Tradicional +<br> <span>Café Expresso</span>
+                    </h3>
+
+                    <span class="dish-description">
+                        Combo de Brownie Tradicional e Café Expresso
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$13,00</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/imagens/adriano-dando-joia.png" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/imagens/pessoa-1.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Tânia Maria
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Gostei muito da iniciativa e criatividade dos alunos em procurarem uma forma de juntar um doce tão popular com uma banda com músicas de sucesso"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/imagens/pessoa-2.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Marriete Passos
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Parabéns pelo projeto de empreendedorismo alunos! Irei adorar ver vocês no Sarau e no dia do estande."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+
+        <section id="history">
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="src/imagens/wave (3).svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Charliebrowniesjr
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5512992303948">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/soucharliebrownies">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
