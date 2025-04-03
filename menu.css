@@ -1,0 +1,83 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens que não cabem na linha sejam movidos para a linha seguinte */
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    padding: 20px;
+    background-color: #fff9ea;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Inicialmente, 2 linhas de 4 */
+.dish {
+    width: calc(25% - 18px); /* 4 divs por linha */
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: #e9a209;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #fff9ea;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-description {
+    color: #434343;
+    text-align: center;
+}
+
+.dish-rate i {
+    color: #e9a209;
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dish-title span {
+    display: block;
+    text-align: center;
+}
+
+/* Quando a tela for menor que 1170px, 4 linhas de 2 divs */
+@media screen and (max-width: 1170px) {
+    .dish {
+        width: calc(50% - 18px); /* 2 divs por linha */
+    }
+}
+
+/* Quando a tela for menor que 768px, 8 linhas de 1 div */
+@media screen and (max-width: 768px) {
+    .dish {
+        width: 100%; /* 1 div por linha */
+    }
+}

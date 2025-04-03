@@ -1,0 +1,189 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: #fff9ea;
+}
+
+#cta .title span {
+    color: #c68e17;
+}
+
+#cta .description {
+    color: #fff9eac9;
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #fff9ea;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 60%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 80%;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1446px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #banner picture img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1446px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #banner picture img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    /* Quando a largura for abaixo de 1250px, a imagem já vai para a linha de baixo */
+    #home {
+        display: flex;
+        flex-direction: column; /* Coloca os elementos na vertical */
+    }
+
+    #cta {
+        order: 1; /* Garante que o CTA fique acima */
+    }
+
+    #banner {
+        order: 2; /* Coloca a imagem abaixo do CTA */
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px; /* Adiciona 50px de espaçamento superior */
+    }
+
+    #banner picture img {
+        width: 80%; /* A imagem vai ocupar 80% da largura da tela quando quebrar */
+        height: auto;
+        max-width: 100%; /* A imagem vai diminuir proporcionalmente */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Versão mobile */
+    #home {
+        display: flex;
+        flex-direction: column; /* Organiza os elementos em coluna */
+    }
+
+    #cta {
+        order: 1; /* Garante que o CTA fique acima */
+    }
+
+    #banner {
+        order: 2; /* Coloca a imagem abaixo do CTA */
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #banner picture img {
+        width: 100%; /* A imagem vai ocupar 100% da largura da tela no mobile */
+        height: auto;
+        max-width: 100%; /* A imagem se ajusta ao tamanho da tela */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #banner picture img {
+        width: 100%; /* A imagem vai se redimensionar corretamente */
+        height: auto;
+        max-width: 100%; /* Garante que a imagem se ajuste */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none; /* Esconde o botão de telefone em telas pequenas */
+    }
+
+    #banner picture img {
+        width: 100%; /* A imagem fica 100% da largura da tela no mobile */
+        height: auto;
+    }
+}

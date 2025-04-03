@@ -1,0 +1,107 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: transparent; /* Começa transparente */
+    z-index: 3;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s ease; /* Transição suave para o padding */
+}
+
+#nav_logo {
+    display: block;
+}
+
+#nav_logo_scrolled {
+    display: none;
+}
+
+header.header-scrolled {
+    background-color: rgba(255, 255, 255, 0.92); /* Opaco */
+    color: #000; /* Texto preto */
+}
+
+header.header-scrolled #nav_logo {
+    display: none;
+}
+
+header.header-scrolled #nav_logo_scrolled {
+    display: block;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 0.3s ease; /* Transição suave */
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff9ea; /* Cor original */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-item.active a {
+    color: #fff9ea; /* Cor ativa do link */
+    border-bottom: 3px solid #c68e17;
+}
+
+.nav-item.scroll-active a {
+    color: #000; /* Preto quando no scroll */
+    border-bottom: 3px solid #c68e17;
+}
+
+.nav-item a:hover {
+    color: #000; /* Texto preto quando em hover */
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+    
+    #mobile_btn {
+        color: #fff9ea;
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
